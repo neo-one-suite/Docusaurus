@@ -557,11 +557,12 @@ header h2 {
   margin-left: 10px;
   font-size: 16px;
 }
-@media (max-width: 375px) {
-  .logo {
-    display: none;
-  }
 
+.mobileLogo {
+  display: none;
+}
+
+@media (max-width: 375px) {
   .headerTitle {
     font-size: 17px;
   }
@@ -1149,6 +1150,14 @@ ul#languages li {
   }
 }
 @media only screen and (min-width: 736px) {
+  .logo {
+    display: none;
+  }
+
+  .mobileLogo {
+    display: block
+  }
+
   .navSearchWrapper {
     position: relative;
     top: auto;
